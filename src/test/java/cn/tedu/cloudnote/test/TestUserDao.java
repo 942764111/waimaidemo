@@ -29,7 +29,7 @@ public class TestUserDao {
 		UserDao dao
 				=ctx.getBean("userDao", UserDao.class);
 		User user
-			=new User("1","liqing","123456","","mangseng");
+			=new User("1","liqing","123456","mangseng");
 		dao.addUser(user);
 	}
 }

@@ -61,8 +61,7 @@ public class UserServiceImpl implements UserService{
 		String id=NoteUtil.createId();
 		//密码加密
 		password=NoteUtil.md5(password);
-		String token="";
-		user=new User(id,name,password,token,nick);
+		user=new User(id,name,password,nick);
 		//调用Dao
 		userDao.addUser(user);
 		

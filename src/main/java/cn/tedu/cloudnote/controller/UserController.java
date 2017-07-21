@@ -17,8 +17,8 @@ import cn.tedu.cloudnote.util.JsonResult;
 public class UserController extends BaseController {
 	@Resource
 	private UserService userService;
-	@ResponseBody
 	@RequestMapping("/login.do")
+	@ResponseBody
 	public Object login(String name,String password){
 		System.out.println("调用控制器! login");
 		User user
